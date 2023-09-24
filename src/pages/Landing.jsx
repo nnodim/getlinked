@@ -39,7 +39,7 @@ const Landing = () => {
   return (
     <>
       <Nav />
-      <main className=''>
+      <main className='font-mono'>
         <hr />
         <section className='relative'>
           <img
@@ -53,7 +53,7 @@ const Landing = () => {
             alt=''
           />
           <div className=''>
-            <h1 className='relative mx-auto text-[1rem] md:text-[3.75vw] italic font-bold lg:text-right text-white py-8 lg:mr-12 w-fit'>
+            <h1 className='relative mx-auto text-[1rem] md:text-[2rem] italic font-bold lg:text-right text-white py-8 lg:mr-12 w-fit'>
               Igniting a Revolution in HR Innovation
               <img
                 src={vector}
@@ -300,7 +300,7 @@ const Landing = () => {
             </div>
           </div>
         </section>
-        <section className='py-16 px-4 mt-9 border-t'>
+        <section id='faqs' className='py-16 px-4 mt-9 border-t'>
           <div className='container mx-auto flex-col lg:flex-row flex justify-center items-center gap-24'>
             <div className='relative text-white w-full max-w-[27rem]'>
               <img
@@ -553,7 +553,7 @@ const Landing = () => {
             className='absolute w[20rem] w-[50rem] -bottom-[5rem] md:-bottom-96 opacity-40 right-0'
           />
           <div className='container mx-auto flex flex-col items-center gap-20'>
-            <div className='text-center lg:text-left'>
+            <div className='text-center'>
               <h2 className='text-4xl text-white font-clash font-bold'>
                 Partners and Sponsors
               </h2>
@@ -607,7 +607,7 @@ const Landing = () => {
                 it's our aim to always take of our participant
               </p>
               <div className='px-4 py-9 lg:px-16 lg:py-14 border max-w-xl border-color-3 text-left'>
-                <p className='font-mono w-full text-sm text-white leading-7 py-4 text-center'>
+                <p className='font-mono w-full text-sm text-white leading-7 py-4'>
                   At getlinked tech Hackathon 1.0, we value your privacy and are
                   committed to protecting your personal information. This
                   Privacy Policy outlines how we collect, use, disclose, and
@@ -620,7 +620,7 @@ const Landing = () => {
                 </p>
                 <div className='flex gap-4'>
                   <img
-                    className='block relative -top-3 left-0'
+                    className='block relative -top-6 left-0'
                     src={listTerm}
                     alt=''
                   />
@@ -632,7 +632,7 @@ const Landing = () => {
                 </div>
                 <div className='flex gap-4'>
                   <img
-                    className='block relative -top-3 left-0'
+                    className='block relative -top-6 left-0'
                     src={listTerm}
                     alt=''
                   />

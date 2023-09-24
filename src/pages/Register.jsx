@@ -8,7 +8,16 @@ import axios from 'axios';
 const BASE_URL = 'https://backend.getlinked.ai/';
 
 const Register = () => {
-    const {image, purpleLens4, purpleLens5, star, starpu, congrats, wink, move} = useImages();
+  const {
+    image,
+    purpleLens4,
+    purpleLens5,
+    star,
+    starpu,
+    congrats,
+    wink,
+    move,
+  } = useImages();
 
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -80,7 +89,7 @@ const Register = () => {
   return (
     <>
       <Nav />
-      <main className='relative'>
+      <main className='relative font-mono'>
         <img
           src={purpleLens4}
           alt=''
@@ -93,8 +102,8 @@ const Register = () => {
         />
 
         <div className='flex flex-col lg:flex-row items-center justify-center py-[3rem]'>
-          <div className='relative w-[12rem] lg:w-auto'>
-            <h2 className='font-clash text-[1rem] leading-normal font-semibold text-color-3 mb-10 lg:hidden'>
+          <div className='relative w-[12rem] md:w-[30rem] lg:w-auto'>
+            <h2 className='font-clash text-[1rem] md:text-[2rem] leading-normal font-semibold text-color-3 mb-10 lg:hidden'>
               Register
             </h2>
             <img
@@ -117,7 +126,7 @@ const Register = () => {
               className='absolute w-5 bottom-0 left-20 hidden lg:block'
             />
           </div>
-          <div className='relative lg:rounded lg:shadow-card w-full lg:w-[46.25rem] lg:p-16 p-9 lg:bg-background-color-1'>
+          <div className='relative lg:rounded lg:shadow-card w-full md:w-[30rem] lg:w-[46.25rem] lg:p-16 p-9 lg:bg-background-color-1'>
             <img
               src={star}
               alt=''
@@ -151,7 +160,7 @@ const Register = () => {
                 >
                   Team's Name
                   <input
-                  required
+                    required
                     type='text'
                     name='teamName'
                     id='teamName'

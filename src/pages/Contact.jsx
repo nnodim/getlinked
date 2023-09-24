@@ -43,28 +43,28 @@ const Contact = () => {
   };
   return (
     <>
-      <div className='hidden lg:block'>
-        <Nav />
-      </div>
-      <main className='relative'>
-        <Link to='/'>
+      <Nav />
+      <main className='relative font-mono'>
+        <Link
+          className='cursor-pointer z-10 absolute mt-10 ml-10 lg:hidden'
+          to='/'
+        >
           <img
             src={back}
             alt=''
-            className='absolute top-10 left-10 lg:hidden'
           />
         </Link>
         <img
           src={purpleLens4}
           alt=''
-          className='w-[50rem] -top-20 lg:top-0 left-0 absolute opacity-40'
+          className='w-[50rem] -top-20 lg:top-0 left-0 absolute opacity-40 z-0'
         />
         <img
           src={purpleLens5}
           alt=''
-          className='absolute hidden lg:block w-[40rem] bottom-0 opacity-50 right-0'
+          className='absolute hidden lg:block w-[40rem] bottom-0 opacity-50 right-0 z-0'
         />
-        <div className=' py-[4rem] lg:py-[8rem] flex flex-col-reverse lg:flex-row items-center justify-evenly'>
+        <div className='py-[4rem] lg:py-[8rem] flex flex-col-reverse lg:flex-row items-center justify-evenly'>
           <div className='text-center lg:text-left relative lg:mt-20 max-w-fit flex i flex-col gap-9'>
             <img
               src={starpu}
@@ -129,7 +129,7 @@ const Contact = () => {
               </ul>
             </div>
           </div>
-          <div className='relative lg:rounded lg:shadow-card w-full lg:w-[38.5625rem] lg:p-20 p-9 lg:bg-background-color-1'>
+          <div className='relative lg:rounded lg:shadow-card w-full max-w-md lg:w-[38.5625rem] lg:p-20 p-9 lg:bg-background-color-1'>
             <img
               src={starpu}
               alt=''
