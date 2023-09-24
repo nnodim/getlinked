@@ -19,7 +19,10 @@ module.exports = {
         'gradient-1': 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);',
       },
       boxShadow: {
-        card: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
+        card: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+      },
+      animation: {
+        'spin-slow': 'pulse 0.5s linear infinite',
       },
     },
   },

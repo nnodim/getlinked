@@ -67,7 +67,6 @@ const Register = () => {
       category,
       privacy_poclicy_accepted: agreed,
     };
-    console.log(data);
     try {
       const res = await axios.post(`${BASE_URL}hackathon/registration`, data);
       console.log(res);
@@ -312,7 +311,7 @@ const Register = () => {
                 className='inline-block  rounded mt-4 w-full px-6 py-4 text-base font-medium uppercase leading-normal text-white 
       bg-gradient-1 '
               >
-                {isLoading ? 'Loading...' : 'Register Now'}
+                {isLoading ? '<svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24"><!-- ... --></svg>Loading...' : 'Register Now'}
               </button>
             </form>
           </div>

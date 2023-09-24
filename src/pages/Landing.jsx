@@ -1,9 +1,16 @@
+import React, { useEffect } from 'react';
 import Nav from '../components/Nav';
 import useImages from '../hooks/useImages';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import RegisterButton from '../components/RegisterButton';
 import Timer from '../components/Timer';
 const Landing = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+    });
+  }, []);
   const {
     logo,
     image1,
@@ -63,12 +70,15 @@ const Landing = () => {
             </h1>
           </div>
           <div className='flex flex-col lg:flex-row lg:pl-32 items-center'>
-            <div className='relative lg:w-1/2 w-full lg:mt-0  text-center lg:text-left'>
+            <div
+              className='relative lg:w-1/2 w-full lg:mt-0  text-center lg:text-left'
+              data-aos='fade-right'
+            >
               <div>
                 <h1 className='relative text-[2rem] lg:text-[3.75vw] font-bold text-white w-fit lg:m-0 mx-auto pb-1'>
                   getlinked Tech
                   <img
-                    className='h-7 w-5 lg:h-16 lg:w-12 absolute -top-3 right-3 lg:-top-10 lg:right-4'
+                    className='animate-bounce h-7 w-5 lg:h-16 lg:w-12 absolute -top-3 right-3 lg:-top-10 lg:right-4'
                     src={creative}
                     alt='lightbulb'
                   />
@@ -99,17 +109,17 @@ const Landing = () => {
               <img
                 src={star}
                 alt=''
-                className='absolute w-[0.8rem] lg:w-auto -top-5 left-40 lg:-top-28 lg:left-0'
+                className='animate-pulse absolute w-[0.8rem] lg:w-auto -top-5 left-40 lg:-top-28 lg:left-0'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute w-[0.6rem] -top-4 right-10 lg:hidden'
+                className='animate-pulse absolute w-[0.6rem] -top-4 right-10 lg:hidden'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute bottom-28 right-14 w-[0.6rem] lg:w-auto lg:right-32'
+                className='animate-pulse absolute bottom-28 right-14 w-[0.6rem] lg:w-auto lg:right-32'
               />
             </div>
             <div className='relative lg:w-1/2 w-full'>
@@ -117,11 +127,12 @@ const Landing = () => {
                 className='object-cover mx-auto'
                 src={image1}
                 alt='a man wearing smart glasses'
+                data-aos='fade-in'
               />
               <img
                 src={star}
                 alt=''
-                className='hidden lg:block absolute top-0 left-0'
+                className='animate-pulse hidden lg:block absolute top-0 left-0'
               />
             </div>
           </div>
@@ -134,11 +145,12 @@ const Landing = () => {
                 className='mx-auto '
                 src={idea}
                 alt=''
+                data-aos='fade-up'
               />
               <img
                 src={stargra}
                 alt=''
-                className='absolute top-[36%] left-20 lg:left-0'
+                className='animate-pulse absolute top-[36%] left-20 lg:left-0'
               />
               <img
                 src={arrow}
@@ -147,16 +159,22 @@ const Landing = () => {
               />
             </div>
             <div className='text-center lg:text-left w-full lg:w-1/2'>
-              <h2 className='relative text-[1.5rem] md:text-4xl text-white font-clash font-bold'>
+              <h2
+                className='relative text-[1.5rem] md:text-4xl text-white font-clash font-bold'
+                data-aos='zoom-left'
+              >
                 Introduction to getlinked <br />
                 <span className='text-color-3'> tech Hackathon 1.0</span>
                 <img
                   src={starpu}
                   alt=''
-                  className='absolute top-8 right-2 w-[0.8rem] lg:w-auto'
+                  className='animate-pulse absolute top-8 right-2 w-[0.8rem] lg:w-auto'
                 />
               </h2>
-              <p className='font-mono w-full text-white text-sm leading-7 py-4 max-w-md mx-auto lg:m-0'>
+              <p
+                className='font-mono w-full text-white text-sm leading-7 py-4 max-w-md mx-auto lg:m-0'
+                data-aos='slide-up'
+              >
                 Our tech hackathon is a melting pot of visionaries, and its
                 purpose is as clear as day: to shape the future. Whether you're
                 a coding genius, a design maverick, or a concept wizard, you'll
@@ -182,11 +200,17 @@ const Landing = () => {
           />
           <div className='contain mx-auto flex flex-col-reverse lg:flex-row justify-center items-center'>
             <div className='relative w-full lg:w-1/2 text-center lg:text-left'>
-              <h2 className='text-4xl text-white font-clash font-bold max-w-md mx-auto'>
+              <h2
+                className='text-4xl text-white font-clash font-bold max-w-md mx-auto'
+                data-aos='zoom-left'
+              >
                 Rules and <br />{' '}
                 <span className='text-color-3'>Guidelines</span>
               </h2>
-              <p className='font-mono w-full text-white text-sm max-w-md mx-auto leading-7 py-4'>
+              <p
+                className='font-mono w-full text-white text-sm max-w-md mx-auto leading-7 py-4'
+                data-aos='slide-up'
+              >
                 Our tech hackathon is a melting pot of visionaries, and its
                 purpose is as clear as day: to shape the future. Whether you're
                 a coding genius, a design maverick, or a concept wizard, you'll
@@ -198,12 +222,12 @@ const Landing = () => {
               <img
                 src={star}
                 alt=''
-                className='absolute top-20 lg:top-0 right-0 lg:left-[55%] z-0 w-[0.8rem] md:w-6'
+                className='animate-pulse absolute top-20 lg:top-0 right-0 lg:left-[55%] z-0 w-[0.8rem] md:w-6'
               />
               <img
                 src={star}
                 alt=''
-                className='w-[0.8rem] md:w-6 absolute bottom-0 lg:left-[80%] md:left-[30%] left-20 '
+                className='animate-pulse w-[0.8rem] md:w-6 absolute bottom-0 lg:left-[80%] md:left-[30%] left-20 '
               />
             </div>
             <div className='relative w-full lg:w-1/2'>
@@ -211,11 +235,12 @@ const Landing = () => {
                 className='block mx-auto'
                 src={unnamed}
                 alt=''
+                data-aos='fade-in'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute left-0 md:left-28 w-6 top-[45%] lg:hidden'
+                className='animate-pulse absolute left-0 md:left-28 w-6 top-[45%] lg:hidden'
               />
             </div>
           </div>
@@ -238,64 +263,73 @@ const Landing = () => {
                 className='mx-auto block'
                 src={judge}
                 alt=''
+                data-aos='fade-in'
               />
               <img
                 src={starpu}
                 alt=''
-                className='absolute -top-[5rem] left-[30%] w-[0.8rem] md:w-6'
+                className='animate-pulse absolute -top-[5rem] left-[30%] w-[0.8rem] md:w-6'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute top-1/2 left-1/2 w-[0.8rem] md:w-6'
+                className='animate-pulse absolute top-1/2 left-1/2 w-[0.8rem] md:w-6'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute -bottom-20 right-10 md:w-6 hidden lg:block'
+                className='animate-pulse absolute -bottom-20 right-10 md:w-6 hidden lg:block'
               />
             </div>
-            <div className='w-full lg:w-1/2'>
-              <h2 className='text-4xl text-white font-clash font-bold'>
+            <div
+              className='w-full lg:w-1/2'
+              data-aos='fade-up'
+            >
+              <h2 className='text-4xl text-white font-clash font-bold' data-aos='zoom-left'>
                 Judging Criteria <br />{' '}
                 <span className='text-color-3'>Key attributes</span>
               </h2>
-              <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
-                <span className='text-color-3'>Innovation and Creativity:</span>{' '}
-                Evaluate the uniqueness and creativity of the solution. Consider
-                whether it addresses a real-world problem in a novel way or
-                introduces innovative features.
-              </p>
-              <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
-                <span className='text-color-3'>Functionality:</span> Assess how
-                well the solution works. Does it perform its intended functions
-                effectively and without major issues? Judges would consider the
-                completeness and robustness of the solution.
-              </p>
-              <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
-                <span className='text-color-3'>Impact and Relevance:</span>{' '}
-                Determine the potential impact of the solution in the real
-                world. Does it address a significant problem, and is it relevant
-                to the target audience? Judges would assess the potential
-                social, economic, or environmental benefits.
-              </p>
-              <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
-                <span className='text-color-3'>Technical Complexity:</span>{' '}
-                Evaluate the technical sophistication of the solution. Judges
-                would consider the complexity of the code, the use of advanced{' '}
-                technologies or algorithms, and the scalability of the solution.
-              </p>
-              <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
-                <span className='text-color-3'>
-                  Adherence to Hackathon Rules:
-                </span>{' '}
-                Judges will Ensure that the team adhered to the rules and
-                guidelines of the hackathon, including deadlines, use of
-                specific technologies or APIs, and any other
-                competition-specific requirements.
-              </p>
-              <div className='py-4'>
-                <RegisterButton text={'Read More'} />
+              <div data-aos='slide-up'>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                  <span className='text-color-3'>
+                    Innovation and Creativity:
+                  </span>{' '}
+                  Evaluate the uniqueness and creativity of the solution.
+                  Consider whether it addresses a real-world problem in a novel
+                  way or introduces innovative features.
+                </p>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                  <span className='text-color-3'>Functionality:</span> Assess
+                  how well the solution works. Does it perform its intended
+                  functions effectively and without major issues? Judges would
+                  consider the completeness and robustness of the solution.
+                </p>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                  <span className='text-color-3'>Impact and Relevance:</span>{' '}
+                  Determine the potential impact of the solution in the real
+                  world. Does it address a significant problem, and is it
+                  relevant to the target audience? Judges would assess the
+                  potential social, economic, or environmental benefits.
+                </p>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                  <span className='text-color-3'>Technical Complexity:</span>{' '}
+                  Evaluate the technical sophistication of the solution. Judges
+                  would consider the complexity of the code, the use of advanced{' '}
+                  technologies or algorithms, and the scalability of the
+                  solution.
+                </p>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                  <span className='text-color-3'>
+                    Adherence to Hackathon Rules:
+                  </span>{' '}
+                  Judges will Ensure that the team adhered to the rules and
+                  guidelines of the hackathon, including deadlines, use of
+                  specific technologies or APIs, and any other
+                  competition-specific requirements.
+                </p>
+                <div className='py-4'>
+                  <RegisterButton text={'Read More'} />
+                </div>
               </div>
             </div>
           </div>
@@ -309,19 +343,19 @@ const Landing = () => {
               <img
                 src={starpu}
                 alt=''
-                className='absolute md:-top-[3rem] md:-left-[3rem] -top-2 -left-21  w-[1.2rem] md:w-6'
+                className='animate-pulse absolute md:-top-[3rem] md:-left-[3rem] -top-2 -left-21  w-[1.2rem] md:w-6'
               />
-              <h2 className='text-center lg:text-left text-4xl text-white font-clash font-bold'>
+              <h2 className='text-center lg:text-left text-4xl text-white font-clash font-bold' data-aos='zoom-left'>
                 Frequently Ask <br />
                 <span className='text-color-3'>Question </span>
               </h2>
-              <p className='text-center lg:text-left font-mono w-full text-white text-sm leading-7 py-4'>
+              <p className='text-center lg:text-left font-mono w-full text-white text-sm leading-7 py-4' data-aos='slide-up'>
                 We got answers to the questions that you might <br />
                 want to ask about
                 <span className='font-bold'> getlinked Hackathon 1.0</span>
               </p>
               <div className='flex flex-col gap-4'>
-                <div class='relative w-full border-b border-white'>
+                <div class='relative w-full border-b border-white' data-aos='fade-up'>
                   <input
                     type='checkbox'
                     id='input1'
@@ -345,7 +379,7 @@ const Landing = () => {
                     </p>
                   </div>
                 </div>
-                <div class='relative  w-full border-b border-white'>
+                <div class='relative  w-full border-b border-white' data-aos='fade-up'>
                   <input
                     type='checkbox'
                     id='input2'
@@ -370,7 +404,7 @@ const Landing = () => {
                   </div>
                 </div>
 
-                <div class='relative w-full  border-b border-white'>
+                <div class='relative w-full  border-b border-white' data-aos='fade-up'>
                   <input
                     type='checkbox'
                     id='input3'
@@ -394,7 +428,7 @@ const Landing = () => {
                     </p>
                   </div>
                 </div>
-                <div class='relative w-full  border-b border-white'>
+                <div class='relative w-full  border-b border-white' data-aos='fade-up'>
                   <input
                     type='checkbox'
                     id='input3'
@@ -418,7 +452,7 @@ const Landing = () => {
                     </p>
                   </div>
                 </div>
-                <div class='relative w-full  border-b border-white'>
+                <div class='relative w-full  border-b border-white' data-aos='fade-up'>
                   <input
                     type='checkbox'
                     id='input3'
@@ -442,7 +476,7 @@ const Landing = () => {
                     </p>
                   </div>
                 </div>
-                <div class='relative w-full  border-b border-white'>
+                <div class='relative w-full  border-b border-white' data-aos='fade-up'>
                   <input
                     type='checkbox'
                     id='input3'
@@ -472,6 +506,7 @@ const Landing = () => {
               <img
                 src={group}
                 alt=''
+                data-aos='fade-in'
               />
             </div>
           </div>
@@ -482,15 +517,15 @@ const Landing = () => {
         >
           <div className='container mx-auto flex-col flex justify-center items-center gap-4 lg:gap-1'>
             <div className='text-center'>
-              <h1 className='text-2xl lg:text-[2rem] text-white font-clash font-bold mb-4'>
+              <h1 className='text-2xl lg:text-[2rem] text-white font-clash font-bold mb-4' data-aos='fade-in'>
                 Timeline
               </h1>
-              <p className='text-white font-mono text-sm mb-[3rem]'>
+              <p className='text-white font-mono text-sm mb-[3rem]' data-aos='slide-up'>
                 Here is the breakdown of the time we <br /> anticipate using for
                 the upcoming event.
               </p>
             </div>
-            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]' data-aos='slide-up'>
               <div className='w-[23.5rem]'>
                 <p className='py-1 lg:text-right lg:text-2xl text-color-3 font-bold'>
                   Hackathon Announcement
@@ -515,7 +550,7 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]' data-aos='slide-up'>
               <div className='w-[23.5rem] hidden lg:block'>
                 <p className='text-right text-2xl text-color-3 font-bold'>
                   November 18, 2023
@@ -540,7 +575,7 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]' data-aos='slide-up'>
               <div className='w-[23.5rem]'>
                 <p className='py-1 lg:text-right lg:text-2xl text-color-3 font-bold'>
                   Teams Registration ends
@@ -565,7 +600,7 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]' data-aos='slide-up'>
               <div className='w-[23.5rem] hidden lg:block'>
                 <p className='lg:text-right lg:text-2xl text-color-3 font-bold'>
                   November 18, 2023
@@ -590,7 +625,7 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]' data-aos='slide-up'>
               <div className='w-[23.5rem]'>
                 <p className='py-1 lg:text-right lg:text-2xl text-color-3 font-bold'>
                   Getlinked Hackathon 1.0 Offically Begins
@@ -615,7 +650,7 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]' data-aos='slide-up'>
               <div className='w-[23.5rem] hidden lg:block'>
                 <p className='text-right text-2xl text-color-3 font-bold'>
                   November 18, 2023
@@ -655,7 +690,7 @@ const Landing = () => {
           />
           <div className='container mx-auto flex flex-col items-center justify-center gap-8 lg:gap-20'>
             <div className='relative w-full'>
-              <div className='w-fit mx-auto lg:ml-auto lg:mr-40'>
+              <div className='w-fit mx-auto lg:ml-auto lg:mr-40' data-aos='fade-in'>
                 <h2 className='lg:text-left text-center text-[1.5rem] md:text-4xl text-white font-clash font-bold'>
                   Prizes and <br />
                   <span className='text-color-3'>Rewards</span>
@@ -668,12 +703,12 @@ const Landing = () => {
               <img
                 src={starpu}
                 alt=''
-                className='absolute -top-4 lg:top-0 left-4 lg:left-[15rem] w-[0.6rem] md:w-6'
+                className='animate-pulse absolute -top-4 lg:top-0 left-4 lg:left-[15rem] w-[0.6rem] md:w-6'
               />
               <img
                 src={starpu}
                 alt=''
-                className='absolute top-7 lg:top-20 right-20 lg:right-[10rem] w-[0.6rem] md:w-6'
+                className='animate-pulse absolute top-7 lg:top-20 right-20 lg:right-[10rem] w-[0.6rem] md:w-6'
               />
             </div>
 
@@ -683,12 +718,14 @@ const Landing = () => {
                   className='block mx-auto'
                   src={trophy}
                   alt=''
+                  data-aos='fade-up'
                 />
               </div>
               <div className='relative w-full lg:w-1/2'>
                 <img
                   src={reward}
                   alt=''
+                  data-aos='fade-up'
                 />
                 <img
                   src={star}
@@ -721,8 +758,8 @@ const Landing = () => {
             className='absolute w[20rem] w-[50rem] -bottom-[5rem] md:-bottom-96 opacity-40 right-0'
           />
           <div className='container mx-auto flex flex-col items-center gap-20'>
-            <div className='text-center'>
-              <h2 className='text-4xl text-white font-clash font-bold'>
+            <div className='text-center' data-aos='fade-in'>
+              <h2 className='text-4xl text-white font-clash font-bold' >
                 Partners and Sponsors
               </h2>
               <p className='font-mono w-full text-white text-sm text-center leading-7 py-4'>
@@ -730,25 +767,26 @@ const Landing = () => {
                 companies as its partners and sponsors.
               </p>
             </div>
-            <div className='relative border border-color-3 px-4 py-4 lg:px-40 lg:py-28 mb-32'>
+            <div className='relative border border-color-3 px-4 py-4 lg:px-40 lg:py-28 mb-32' data-aos='fade-in'>
               <img
                 src={partners}
                 alt=''
+                
               />
               <img
                 src={starpu}
                 alt=''
-                className='absolute top-0 lg:-top-10 left-6 w-[0.8rem] md:w-6'
+                className='animate-pulse absolute top-0 lg:-top-10 left-6 w-[0.8rem] md:w-6'
               />
               <img
                 src={starpu}
                 alt=''
-                className='absolute top-20 left-[55%] w-[0.8rem] hidden lg:block'
+                className='animate-pulse absolute top-20 left-[55%] w-[0.8rem] hidden lg:block'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute bottom-10 left-[55%] w-[0.8rem] md:w-6'
+                className='animate-pulse absolute bottom-10 left-[55%] w-[0.8rem] md:w-6'
               />
             </div>
           </div>
@@ -762,19 +800,19 @@ const Landing = () => {
           />
           <div className='container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12  lg:gap-20'>
             <div className='relative text-center lg:text-left'>
-              <h2 className='text-4xl text-white font-clash font-bold'>
+              <h2 className='text-4xl text-white font-clash font-bold' data-aos='zoom-left'>
                 Privacy Policy and <br />
                 <span className='text-color-3'>Terms</span>
               </h2>
-              <p className='font-mono w-full text-white text-sm leading-7 py-4'>
+              <p className='font-mono w-full text-white text-sm leading-7 py-4' data-aos='fade-up'>
                 Last updated on September 12, 2023
               </p>
-              <p className='font-mono w-full text-white leading-7 pt-4 pb-8'>
+              <p className='font-mono w-full text-white leading-7 pt-4 pb-8' data-aos='fade-up'>
                 Below are our privacy & policy, which outline a lot of goodies.{' '}
                 <br />
                 it's our aim to always take of our participant
               </p>
-              <div className='px-4 py-9 lg:px-16 lg:py-14 border max-w-xl border-color-3 text-left'>
+              <div className='px-4 py-9 lg:px-16 lg:py-14 border max-w-xl border-color-3 text-left' data-aos="fade-up">
                 <p className='font-mono w-full text-sm text-white leading-7 py-4'>
                   At getlinked tech Hackathon 1.0, we value your privacy and are
                   committed to protecting your personal information. This
@@ -816,17 +854,17 @@ const Landing = () => {
               <img
                 src={starpu}
                 alt=''
-                className='absolute top-72 lg:top-32 right-0 w-[0.8rem] md:w-6'
+                className='animate-pulse absolute top-72 lg:top-32 right-0 w-[0.8rem] md:w-6'
               />
               <img
                 src={starpu}
                 alt=''
-                className='absolute bottom-[30%]  -left-5 lg:-left-20 w-[0.8rem] md:w-6'
+                className='animate-pulse absolute bottom-[30%]  -left-5 lg:-left-20 w-[0.8rem] md:w-6'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute -top-10 lg:top-0 right-0 lg:right-[30%] w-[0.8rem] md:w-6'
+                className='animate-pulse absolute -top-10 lg:top-0 right-0 lg:right-[30%] w-[0.8rem] md:w-6'
               />
             </div>
             <div className='relative top-2 mt-[4rem]'>
@@ -834,26 +872,27 @@ const Landing = () => {
                 className=''
                 src={lock}
                 alt=''
+                data-aos='fade-in'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute w-4 lg:top-48 lg:right-20 top-20 right-10'
+                className='animate-pulse absolute w-4 lg:top-48 lg:right-20 top-20 right-10'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute w-3 md:w-6 lg:bottom-60 bottom-10 right-0'
+                className='animate-pulse absolute w-3 md:w-6 lg:bottom-60 bottom-10 right-0'
               />
               <img
                 src={starpu}
                 alt=''
-                className='absolute w-4 lg:bottom-80 lg:left-40 left-0 top-20'
+                className='animate-pulse absolute w-4 lg:bottom-80 lg:left-40 left-0 top-20'
               />
               <img
                 src={star}
                 alt=''
-                className='absolute w-4 lg:bottom-60 lg:left-28 bottom-16 left-10'
+                className='animate-pulse absolute w-4 lg:bottom-60 lg:left-28 bottom-16 left-10'
               />
             </div>
           </div>

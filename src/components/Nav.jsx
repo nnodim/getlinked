@@ -27,19 +27,19 @@ const Nav = () => {
               {navigation.map((item) => (
                 <li
                   key={item.name}
-                  className='text-white'
+                  className='text-white hover:text-color-3 transition-all duration-200'
                 >
                   <a href={item.href}>{item.name}</a>
                 </li>
               ))}
-              <li className='text-white'>
+              <li className='text-white hover:text-color-3 transition-all duration-200'>
                 <Link to='/contact'>Contact</Link>
               </li>
             </div>
             <div>
               <Link
                 to='/register'
-                className='text-center inline-block rounded w-40 px-6 py-4 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out bg-gradient-1'
+                className='text-center inline-block rounded w-40 px-6 py-4 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out bg-gradient-1 hover:animate-pulse'
               >
                 Register
               </Link>
@@ -58,19 +58,19 @@ const Nav = () => {
               {navigation.map((item) => (
                 <li
                   key={item.name}
-                  className='text-white'
+                  className='text-white hover:text-color-3 transition-all duration-200'
                 >
                   <a href={item.href}>{item.name}</a>
                 </li>
               ))}
-              <li className='text-white'>
+              <li className='text-white hover:text-color-3 transition-all duration-200'>
                 <Link to='/contact'>Contact</Link>
               </li>
             </div>
             <div>
               <Link
                 to='/register'
-                className='text-center inline-block rounded w-40 px-6 py-4 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out bg-gradient-1'
+                className='text-center inline-block rounded w-40 px-6 py-4 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out bg-gradient-1 hover:animate-pulse'
               >
                 Register
               </Link>
