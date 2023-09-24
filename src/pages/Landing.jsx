@@ -640,36 +640,6 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-            {/* <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
-            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
-            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
-              2
-            </span>
-          </div>
-          <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
-            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
-            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
-              3
-            </span>
-          </div>
-          <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
-            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
-            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
-              4
-            </span>
-          </div>
-          <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
-            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
-            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
-              5
-            </span>
-          </div>
-          <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
-            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
-            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
-              6
-            </span>
-          </div> */}
           </div>
         </section>
         <section className='bg-[#100B20] relative pt-16 pb-24 px-4 mt-9'>
@@ -760,7 +730,7 @@ const Landing = () => {
                 companies as its partners and sponsors.
               </p>
             </div>
-            <div className='relative border border-color-3 px-12 py-10 lg:px-40 lg:py-28 mb-32'>
+            <div className='relative border border-color-3 px-4 py-4 lg:px-40 lg:py-28 mb-32'>
               <img
                 src={partners}
                 alt=''

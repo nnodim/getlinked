@@ -129,7 +129,7 @@ const Contact = () => {
               </ul>
             </div>
           </div>
-          <div className='relative lg:rounded lg:shadow-card w-full max-w-md lg:w-[38.5625rem] lg:p-20 p-9 lg:bg-background-color-1'>
+          <div className='relative lg:rounded lg:shadow-card w-full md:w-[30rem] lg:w-[38.5625rem] lg:p-20 p-9 lg:bg-background-color-1'>
             <img
               src={starpu}
               alt=''
