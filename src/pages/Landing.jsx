@@ -300,7 +300,10 @@ const Landing = () => {
             </div>
           </div>
         </section>
-        <section id='faqs' className='py-16 px-4 mt-9 border-t'>
+        <section
+          id='faqs'
+          className='py-16 px-4 mt-9 border-t'
+        >
           <div className='container mx-auto flex-col lg:flex-row flex justify-center items-center gap-24'>
             <div className='relative text-white w-full max-w-[27rem]'>
               <img
@@ -473,7 +476,202 @@ const Landing = () => {
             </div>
           </div>
         </section>
-        <section id='timeline'></section>
+        <section
+          id='timeline'
+          className='py-16 px-4 mt-9 border-t'
+        >
+          <div className='container mx-auto flex-col flex justify-center items-center gap-4 lg:gap-1'>
+            <div className='text-center'>
+              <h1 className='text-2xl lg:text-[2rem] text-white font-clash font-bold mb-4'>
+                Timeline
+              </h1>
+              <p className='text-white font-mono text-sm mb-[3rem]'>
+                Here is the breakdown of the time we <br /> anticipate using for
+                the upcoming event.
+              </p>
+            </div>
+            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+              <div className='w-[23.5rem]'>
+                <p className='py-1 lg:text-right lg:text-2xl text-color-3 font-bold'>
+                  Hackathon Announcement
+                </p>
+                <p className='py-1 text-sm text-white lg:text-right'>
+                  The getlinked tech hackathon 1.0 is formally announced <br />
+                  to the general public and teams begin to get ready to register
+                </p>
+                <p className='text-color-3 font-bold lg:hidden pt-1'>
+                  November 18, 2023
+                </p>
+              </div>
+              <div className='flex flex-col items-center gap-3 max-w-fit'>
+                <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+                <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+                  1
+                </span>
+              </div>
+              <div className='w-[23.5rem] hidden lg:block'>
+                <p className='text-2xl text-color-3 font-bold'>
+                  November 18, 2023
+                </p>
+              </div>
+            </div>
+            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+              <div className='w-[23.5rem] hidden lg:block'>
+                <p className='text-right text-2xl text-color-3 font-bold'>
+                  November 18, 2023
+                </p>
+              </div>
+              <div className='flex flex-col items-center gap-3 max-w-fit mt-3'>
+                <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+                <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+                  2
+                </span>
+              </div>
+              <div className='w-[23.5rem]'>
+                <p className='py-1 lg:text-2xl text-color-3 font-bold'>
+                  Teams Registration begins
+                </p>
+                <p className='py-1 text-sm text-white'>
+                  Interested teams can now show their interest in the <br />
+                  getlinked tech hackathon 1.0 2023 by proceeding to register
+                </p>
+                <p className='pt-1 text-color-3 font-bold lg:hidden'>
+                  November 18, 2023
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+              <div className='w-[23.5rem]'>
+                <p className='py-1 lg:text-right lg:text-2xl text-color-3 font-bold'>
+                  Teams Registration ends
+                </p>
+                <p className='py-1 text-sm text-white lg:text-right'>
+                  Interested Participants are no longer Allowed to <br />
+                  register
+                </p>
+                <p className='pt-1 text-color-3 font-bold lg:hidden'>
+                  November 18, 2023
+                </p>
+              </div>
+              <div className='flex flex-col items-center gap-3 max-w-fit'>
+                <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+                <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+                  3
+                </span>
+              </div>
+              <div className='w-[23.5rem] hidden lg:block'>
+                <p className='text-2xl text-color-3 font-bold'>
+                  November 18, 2023
+                </p>
+              </div>
+            </div>
+            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+              <div className='w-[23.5rem] hidden lg:block'>
+                <p className='lg:text-right lg:text-2xl text-color-3 font-bold'>
+                  November 18, 2023
+                </p>
+              </div>
+              <div className='flex flex-col items-center gap-3 max-w-fit mt-3'>
+                <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+                <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+                  4
+                </span>
+              </div>
+              <div className='w-[23.5rem]'>
+                <p className='py-1 lg:text-2xl text-color-3 font-bold'>
+                  Announcement of the accepted teams and ideas
+                </p>
+                <p className='py-1 text-sm text-white'>
+                  All teams whom idea has been accepted into getlinked tech
+                  hackathon 1.0 2023 are formally announced
+                </p>
+                <p className='pt-1 text-color-3 font-bold lg:hidden'>
+                  November 18, 2023
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-row-reverse lg:flex-row justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+              <div className='w-[23.5rem]'>
+                <p className='py-1 lg:text-right lg:text-2xl text-color-3 font-bold'>
+                  Getlinked Hackathon 1.0 Offically Begins
+                </p>
+                <p className='py-1 text-sm text-white lg:text-right'>
+                  Accepted teams can now proceed to build their ground breaking
+                  skill driven solutions
+                </p>
+                <p className='pt-1 text-color-3 font-bold lg:hidden'>
+                  November 18, 2023
+                </p>
+              </div>
+              <div className='flex flex-col items-center gap-3 max-w-fit'>
+                <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+                <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+                  5
+                </span>
+              </div>
+              <div className='w-[23.5rem] hidden lg:block'>
+                <p className='text-2xl text-color-3 font-bold'>
+                  November 18, 2023
+                </p>
+              </div>
+            </div>
+            <div className='flex justify-center items-end w-full gap-5 lg:gap-[6rem]'>
+              <div className='w-[23.5rem] hidden lg:block'>
+                <p className='text-right text-2xl text-color-3 font-bold'>
+                  November 18, 2023
+                </p>
+              </div>
+              <div className='flex flex-col items-center gap-3 max-w-fit mt-3'>
+                <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+                <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+                  6
+                </span>
+              </div>
+              <div className='w-[23.5rem]'>
+                <p className='py-1 lg:text-2xl text-color-3 font-bold'>
+                  Demo Day
+                </p>
+                <p className='py-1 text-sm text-white'>
+                  Teams get the opportunity to pitch their projects to judges.
+                  The winner of the hackathon will also be announced on this day
+                </p>
+                <p className='pt-1 text-color-3 font-bold lg:hidden'>
+                  November 18, 2023
+                </p>
+              </div>
+            </div>
+            {/* <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
+            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+              2
+            </span>
+          </div>
+          <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
+            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+              3
+            </span>
+          </div>
+          <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
+            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+              4
+            </span>
+          </div>
+          <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
+            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+              5
+            </span>
+          </div>
+          <div className='flex flex-col items-center gap-3 max-w-fit mx-auto mt-3'>
+            <span className='border border-color-3 bg-color-3 w-1 h-[6rem] lg:h-[8.56rem]'></span>
+            <span className='lg:w-[3rem] lg:h-[3rem] md:w-[2rem] md:h-[2rem] w-[1.2rem] h-[1.2rem] rounded-full bg-color-3 font-mono font-bold text-sm md:text-lg lg:text-2xl text-white flex items-center justify-center'>
+              6
+            </span>
+          </div> */}
+          </div>
+        </section>
         <section className='bg-[#100B20] relative pt-16 pb-24 px-4 mt-9'>
           <img
             className='absolute w-[50rem] top-0 lg:-top-[4rem] left-0 opacity-40 z-[1] bg-blend-hard-light'
@@ -487,7 +685,7 @@ const Landing = () => {
           />
           <div className='container mx-auto flex flex-col items-center justify-center gap-8 lg:gap-20'>
             <div className='relative w-full'>
-              <div className='w-fit lg:ml-auto lg:mr-40'>
+              <div className='w-fit mx-auto lg:ml-auto lg:mr-40'>
                 <h2 className='lg:text-left text-center text-[1.5rem] md:text-4xl text-white font-clash font-bold'>
                   Prizes and <br />
                   <span className='text-color-3'>Rewards</span>
