@@ -1,7 +1,8 @@
 import './App.css';
 import Landing from './pages/Landing';
 import Contact from './pages/Contact';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import Register from './pages/Register';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing/>} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path='/register' element={<Register/>} />
       </Routes>
     </div>
   );

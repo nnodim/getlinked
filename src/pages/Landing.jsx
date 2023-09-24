@@ -1,37 +1,41 @@
 import Nav from '../components/Nav';
-import logo from '../assets/getlinked.svg';
-import image1 from '../assets/man-wearing-smart-glasses-touching-virtual-screen.png';
-import vector from '../assets/vector-4.svg';
-import chain from '../assets/chain.png';
-import vector2 from '../assets/f-4-a-5.png';
-import creative from '../assets/creative-1.png';
-import purpleLens1 from '../assets/purple-lens-flare1.png';
-import purpleLens2 from '../assets/purple-lens-flare-png.svg';
-import purpleLens3 from '../assets/Purple-Lens-Flare-half2.svg';
-import purpleLens4 from '../assets/Purple-Lens-Flare2.svg';
-import purpleLens5 from '../assets/Purple-Lens-Flare3.svg';
-import star from '../assets/star.png';
-import starpu from '../assets/star-pu.png';
-import stargra from '../assets/sata-gra.png';
-import arrow from '../assets/arrow.png';
-import unnamed from '../assets/unnamed.svg';
-import idea from '../assets/The-big-idea.png';
-import group from '../assets/Group4.svg';
-import judge from '../assets/judge.svg';
-import trophy from '../assets/trophy.png';
-import reward from '../assets/rewards.svg';
-import partners from '../assets/Partner-and-Sponsors.svg';
-import lock from '../assets/lock.png';
-import listTerm from '../assets/list-terms.svg';
-import instgram from '../assets/mdi-instagram.svg';
-import x from '../assets/x.svg';
-import facebook from '../assets/facebook.svg';
-import linkedin from '../assets/ri-linkedin-fill.svg';
-import phone from '../assets/phone.svg';
-import location from '../assets/location.svg';
+import useImages from '../hooks/useImages';
+
 import RegisterButton from '../components/RegisterButton';
 import Timer from '../components/Timer';
 const Landing = () => {
+  const {
+    logo,
+    image1,
+    vector,
+    chain,
+    vector2,
+    creative,
+    purpleLens1,
+    purpleLens2,
+    purpleLens3,
+    purpleLens4,
+    purpleLens5,
+    star,
+    starpu,
+    stargra,
+    arrow,
+    unnamed,
+    idea,
+    group,
+    judge,
+    trophy,
+    reward,
+    partners,
+    lock,
+    listTerm,
+    instgram,
+    x,
+    facebook,
+    linkedin,
+    phone,
+    location,
+  } = useImages();
   return (
     <>
       <Nav />
@@ -518,15 +522,27 @@ const Landing = () => {
                   src={reward}
                   alt=''
                 />
-                <img src={star} alt="" className='absolute -top-14 lg:top-0 left-20 w-[0.8rem] md:w-6' />
-                <img src={star} alt="" className='absolute lg:top-20 lg:right-0 top-4 right-5 w-[0.8rem] md:w-6' />
-                <img src={star} alt="" className='absolute -bottom-10 lg:right-48 right-20 w-[0.8rem] md:w-6' />
+                <img
+                  src={star}
+                  alt=''
+                  className='absolute -top-14 lg:top-0 left-20 w-[0.8rem] md:w-6'
+                />
+                <img
+                  src={star}
+                  alt=''
+                  className='absolute lg:top-20 lg:right-0 top-4 right-5 w-[0.8rem] md:w-6'
+                />
+                <img
+                  src={star}
+                  alt=''
+                  className='absolute -bottom-10 lg:right-48 right-20 w-[0.8rem] md:w-6'
+                />
               </div>
             </div>
           </div>
         </section>
         <section className='relative pb-16 pt-12 lg:pt-40 px-4 mt-9'>
-        <img
+          <img
             src={purpleLens4}
             alt=''
             className='w-[50rem] -top-20 lg:top-0 left-0 absolute opacity-40'
@@ -551,15 +567,27 @@ const Landing = () => {
                 src={partners}
                 alt=''
               />
-              <img src={starpu} alt="" className='absolute top-0 lg:-top-10 left-6 w-[0.8rem] md:w-6' />
-              <img src={starpu} alt="" className='absolute top-20 left-[55%] w-[0.8rem] hidden lg:block' />
-              <img src={star} alt="" className='absolute bottom-10 left-[55%] w-[0.8rem] md:w-6' />
+              <img
+                src={starpu}
+                alt=''
+                className='absolute top-0 lg:-top-10 left-6 w-[0.8rem] md:w-6'
+              />
+              <img
+                src={starpu}
+                alt=''
+                className='absolute top-20 left-[55%] w-[0.8rem] hidden lg:block'
+              />
+              <img
+                src={star}
+                alt=''
+                className='absolute bottom-10 left-[55%] w-[0.8rem] md:w-6'
+              />
             </div>
           </div>
         </section>
         <hr className='mb-32' />
         <section className='relative pt-16 pb-20 lg:pb-40 px-12 mt-9'>
-        <img
+          <img
             src={purpleLens4}
             alt=''
             className='w-[50rem] bottom-[40%] lg:-bottom-20 left-0 absolute opacity-40'
@@ -617,9 +645,21 @@ const Landing = () => {
                   <RegisterButton text={'Read More'} />
                 </div>
               </div>
-              <img src={starpu} alt="" className='absolute top-72 lg:top-32 right-0 w-[0.8rem] md:w-6' />
-              <img src={starpu} alt="" className='absolute bottom-[30%]  -left-5 lg:-left-20 w-[0.8rem] md:w-6' />
-              <img src={star} alt="" className='absolute -top-10 lg:top-0 right-0 lg:right-[30%] w-[0.8rem] md:w-6' />
+              <img
+                src={starpu}
+                alt=''
+                className='absolute top-72 lg:top-32 right-0 w-[0.8rem] md:w-6'
+              />
+              <img
+                src={starpu}
+                alt=''
+                className='absolute bottom-[30%]  -left-5 lg:-left-20 w-[0.8rem] md:w-6'
+              />
+              <img
+                src={star}
+                alt=''
+                className='absolute -top-10 lg:top-0 right-0 lg:right-[30%] w-[0.8rem] md:w-6'
+              />
             </div>
             <div className='relative top-2 mt-[4rem]'>
               <img
@@ -627,18 +667,38 @@ const Landing = () => {
                 src={lock}
                 alt=''
               />
-              <img src={star} alt="" className='absolute w-4 lg:top-48 lg:right-20 top-20 right-10' />
-              <img src={star} alt="" className='absolute w-3 md:w-6 lg:bottom-60 bottom-10 right-0' />
-              <img src={starpu} alt="" className='absolute w-4 lg:bottom-80 lg:left-40 left-0 top-20' />
-              <img src={star} alt="" className='absolute w-4 lg:bottom-60 lg:left-28 bottom-16 left-10' />
+              <img
+                src={star}
+                alt=''
+                className='absolute w-4 lg:top-48 lg:right-20 top-20 right-10'
+              />
+              <img
+                src={star}
+                alt=''
+                className='absolute w-3 md:w-6 lg:bottom-60 bottom-10 right-0'
+              />
+              <img
+                src={starpu}
+                alt=''
+                className='absolute w-4 lg:bottom-80 lg:left-40 left-0 top-20'
+              />
+              <img
+                src={star}
+                alt=''
+                className='absolute w-4 lg:bottom-60 lg:left-28 bottom-16 left-10'
+              />
             </div>
           </div>
         </section>
       </main>
       <footer className='bg-[#100B20] pt-20 lg:pt-20 px-20 lg:px-20'>
         <div className='container mx-auto flex flex-col lg:flex-row justify-between gap-y-20'>
-          <div className='relative' >
-            <img src={star} alt="" className='absolute top-6 -left-16 w-[0.8rem] md:w-4' />
+          <div className='relative'>
+            <img
+              src={star}
+              alt=''
+              className='absolute top-6 -left-16 w-[0.8rem] md:w-4'
+            />
             <img
               src={logo}
               alt=''
@@ -664,7 +724,11 @@ const Landing = () => {
             </div>
           </div>
           <div className='relative'>
-            <img src={star} alt="" className='absolute w-[0.8rem] right-0 top-6'/>
+            <img
+              src={star}
+              alt=''
+              className='absolute w-[0.8rem] right-0 top-6'
+            />
             <h3 className='font-semibold text[0.875rem] leading-6 text-color-3'>
               Useful Links
             </h3>
@@ -723,7 +787,11 @@ const Landing = () => {
             </div>
           </div>
           <div className='relative flex flex-col gap-[1.3rem]'>
-            <img src={star} alt="" className='absolute w-[0.8rem] right-0 bottom-1' />
+            <img
+              src={star}
+              alt=''
+              className='absolute w-[0.8rem] right-0 bottom-1'
+            />
             <h3 className='font-semibold text[0.875rem] leading-6 text-color-3'>
               Contact Us
             </h3>
@@ -749,9 +817,12 @@ const Landing = () => {
           </div>
         </div>
         <div className='text-center py-10'>
-          
           <p className='relative max-w-fit mx-auto text-[0.875rem] text-white leading-6 font-mono'>
-          <img src={starpu} alt="" className='absolute -top-4 lg:-top-10 right-1/2 w-[0.8rem]'/>
+            <img
+              src={starpu}
+              alt=''
+              className='absolute -top-4 lg:-top-10 right-1/2 w-[0.8rem]'
+            />
             All rights reserved. © getlinked Ltd.
           </p>
         </div>
