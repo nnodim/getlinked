@@ -127,7 +127,7 @@ const Landing = () => {
                 className='object-cover mx-auto'
                 src={image1}
                 alt='a man wearing smart glasses'
-                data-aos='fade-in'
+                data-aos='fade-left'
               />
               <img
                 src={star}
@@ -283,14 +283,14 @@ const Landing = () => {
             </div>
             <div
               className='w-full lg:w-1/2'
-              data-aos='fade-up'
+              data-aos=''
             >
               <h2 className='text-4xl text-white font-clash font-bold' data-aos='zoom-left'>
                 Judging Criteria <br />{' '}
                 <span className='text-color-3'>Key attributes</span>
               </h2>
-              <div data-aos='slide-up'>
-                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+              <div data-aos=''>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4' data-aos='slide-up' >
                   <span className='text-color-3'>
                     Innovation and Creativity:
                   </span>{' '}
@@ -298,27 +298,27 @@ const Landing = () => {
                   Consider whether it addresses a real-world problem in a novel
                   way or introduces innovative features.
                 </p>
-                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4' data-aos='slide-up'>
                   <span className='text-color-3'>Functionality:</span> Assess
                   how well the solution works. Does it perform its intended
                   functions effectively and without major issues? Judges would
                   consider the completeness and robustness of the solution.
                 </p>
-                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4' data-aos='slide-up'>
                   <span className='text-color-3'>Impact and Relevance:</span>{' '}
                   Determine the potential impact of the solution in the real
                   world. Does it address a significant problem, and is it
                   relevant to the target audience? Judges would assess the
                   potential social, economic, or environmental benefits.
                 </p>
-                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4' data-aos='slide-up'>
                   <span className='text-color-3'>Technical Complexity:</span>{' '}
                   Evaluate the technical sophistication of the solution. Judges
                   would consider the complexity of the code, the use of advanced{' '}
                   technologies or algorithms, and the scalability of the
                   solution.
                 </p>
-                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4'>
+                <p className='font-mono w-full text-white text-sm leading-7 mx-auto lg:m-0 max-w-lg py-4' data-aos='slide-up'>
                   <span className='text-color-3'>
                     Adherence to Hackathon Rules:
                   </span>{' '}
@@ -327,7 +327,7 @@ const Landing = () => {
                   specific technologies or APIs, and any other
                   competition-specific requirements.
                 </p>
-                <div className='py-4'>
+                <div className='py-4' data-aos='slide-up'>
                   <RegisterButton text={'Read More'} />
                 </div>
               </div>

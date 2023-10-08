@@ -48,7 +48,21 @@ const Timer = () => {
   return (
     <div className=' text-white'>
       {state.seconds < 0 ? (
-        <div className=''> Time up </div>
+        <div className='inline-flex gap-5 lg:mt-16 my-6 mx-auto lg:mx-0'>
+        <div className='inline-block'>
+          <div className='text-5xl lg:text-6xl  font-unica'>00<span className='text-sm'>H</span></div>
+          
+        </div>
+        
+        <div className='inline-block'>
+          <div className='text-5xl lg:text-6xl font-unica'>00<span className='text-sm'>M</span></div>
+          
+        </div>
+        <div className='inline-block'>
+          <div className='text-5xl lg:text-6xl font-unica'>00<span className='text-sm'>S</span></div>
+          
+        </div>
+      </div>
       ) : (
         <div className='inline-flex gap-5 lg:mt-16 my-6 mx-auto lg:mx-0'>
           <div className='inline-block'>
